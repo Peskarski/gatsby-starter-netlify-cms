@@ -121,6 +121,7 @@ ProductPageTemplate.propTypes = {
 };
 
 const ProductPage = ({ data }) => {
+  console.log(data);
   const { frontmatter } = data.markdownRemark;
 
   return (
