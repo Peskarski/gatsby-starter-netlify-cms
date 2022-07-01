@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
 
-const Navbar = class extends React.Component {
+class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,11 +21,11 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "is-active",
-            })
+            navBarActiveClass: "is-active",
+          })
           : this.setState({
-              navBarActiveClass: "",
-            });
+            navBarActiveClass: "",
+          });
       }
     );
   }
@@ -60,7 +58,7 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/products">
+              {/* <Link className="navbar-item" to="/products">
                 Products
               </Link>
               <Link className="navbar-item" to="/blog">
@@ -71,19 +69,31 @@ const Navbar = class extends React.Component {
               </Link>
               <Link className="navbar-item" to="/contact/examples">
                 Form Examples
+              </Link> */}
+              <Link className="navbar-item" to="/">
+                Самое интересное
+              </Link>
+              <Link className="navbar-item" to="/lists">
+                Подборки фильмов
+              </Link>
+              <Link className="navbar-item" to="/news">
+                Новости
+              </Link>
+              <Link className="navbar-item" to="/reviews">
+                Обзоры
               </Link>
               <Link className="navbar-item" to="/about">
                 Об авторе
               </Link>
-              <Link className="navbar-item" to="/new">
+              {/* <Link className="navbar-item" to="/new">
                 Новая
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
       </nav>
     );
   }
-};
+}
 
 export default Navbar;
