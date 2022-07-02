@@ -1,20 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { createUseStyles } from 'react-jss';
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-const useStyles = createUseStyles(() => ({
-  item: {
-    border: '2px solid black',
-  }
-}))
-
-const ListRollTemplate = (props) => {
+const NewsRollTemplate = (props) => {
   const { data } = props
   const { edges: lists } = data.allMarkdownRemark
-  const cx = useStyles();
 
   return (
     <div className="columns is-multiline" >
@@ -22,7 +14,7 @@ const ListRollTemplate = (props) => {
         lists.map(({ node: post }) => (
           <div className="is-parent column is-6" key={post.id}>
             <article
-              className={`blog-list-item tile is-child box notification ${cx.item} ${post.frontmatter.featuredpost ? 'is-featured' : ''
+              className={`blog-list-item tile is-child box notification ${post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
             >
               <header>
@@ -60,7 +52,7 @@ const ListRollTemplate = (props) => {
                 <br />
                 <br />
                 <Link className="button" to={post.fields.slug}>
-                  Побробнее
+                  Читать
                 </Link>
               </p>
             </article>
@@ -70,7 +62,7 @@ const ListRollTemplate = (props) => {
   );
 }
 
-ListRoll.propTypes = {
+NewsRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -79,14 +71,14 @@ ListRoll.propTypes = {
 }
 
 
-export default function ListRoll() {
+export default function NewsRoll() {
   return (
     <StaticQuery
       query={graphql`
-        query ListRollQuery {
+        query NewsRollQuery {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { templateKey: { eq: "list-post" } } }
+            filter: { frontmatter: { templateKey: { eq: "news-post" } } }
           ) {
             edges {
               node {
@@ -116,7 +108,7 @@ export default function ListRoll() {
           }
         }
       `}
-      render={(data, count) => <ListRollTemplate data={data} count={count} />}
+      render={(data, count) => <NewsRollTemplate data={data} count={count} />}
     />
   );
 }
