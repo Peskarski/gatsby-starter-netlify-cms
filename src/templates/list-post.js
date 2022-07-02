@@ -14,6 +14,7 @@ export const ListPostTemplate = ({
   tags,
   title,
   helmet,
+  image,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -27,6 +28,7 @@ export const ListPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <img src={image} />
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -53,6 +55,8 @@ ListPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  tags: PropTypes.arrayOf(PropTypes.string),
+  image: PropTypes.string,
 };
 
 const BlogPost = ({ data }) => {

@@ -1,12 +1,20 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { createUseStyles } from 'react-jss';
 import { Link, graphql, StaticQuery } from 'gatsby';
 import PreviewCompatibleImage from './PreviewCompatibleImage';
 
-const NewsRollTemplate = (props) => {
+const useStyles = createUseStyles(() => ({
+  item: {
+    border: '2px solid black',
+  }
+}));
+
+const ReviewRollTemplate = (props) => {
   const { data } = props;
   const { edges: lists } = data.allMarkdownRemark;
+  const cx = useStyles();
 
   return (
     <div className="columns is-multiline" >
@@ -14,7 +22,7 @@ const NewsRollTemplate = (props) => {
         lists.map(({ node: post }) => (
           <div className="is-parent column is-6" key={post.id}>
             <article
-              className={`blog-list-item tile is-child box notification ${post.frontmatter.featuredpost ? 'is-featured' : ''
+              className={`blog-list-item tile is-child box notification ${cx.item} ${post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
             >
               <header>
@@ -62,7 +70,7 @@ const NewsRollTemplate = (props) => {
   );
 };
 
-NewsRoll.propTypes = {
+ReviewRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -71,14 +79,14 @@ NewsRoll.propTypes = {
 };
 
 
-export default function NewsRoll() {
+export default function ReviewRoll() {
   return (
     <StaticQuery
       query={graphql`
-        query NewsRollQuery {
+        query ReviewRollQuery {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { templateKey: { eq: "news-post" } } }
+            filter: { frontmatter: { templateKey: { eq: "review-post" } } }
           ) {
             edges {
               node {
@@ -108,7 +116,7 @@ export default function NewsRoll() {
           }
         }
       `}
-      render={(data, count) => <NewsRollTemplate data={data} count={count} />}
+      render={(data, count) => <ReviewRollTemplate data={data} count={count} />}
     />
   );
 }
