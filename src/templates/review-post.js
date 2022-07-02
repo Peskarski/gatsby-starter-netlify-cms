@@ -93,7 +93,7 @@ NewsPost.propTypes = {
 export default NewsPost;
 
 export const pageQuery = graphql`
-  query NewsPostByID($id: String!) {
+  query ReviewPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

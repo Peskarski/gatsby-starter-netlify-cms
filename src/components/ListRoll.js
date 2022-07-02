@@ -1,19 +1,19 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 import { createUseStyles } from 'react-jss';
-import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { Link, graphql, StaticQuery } from 'gatsby';
+import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const useStyles = createUseStyles(() => ({
   item: {
     border: '2px solid black',
   }
-}))
+}));
 
 const ListRollTemplate = (props) => {
-  const { data } = props
-  const { edges: lists } = data.allMarkdownRemark
+  const { data } = props;
+  const { edges: lists } = data.allMarkdownRemark;
   const cx = useStyles();
 
   return (
@@ -68,7 +68,7 @@ const ListRollTemplate = (props) => {
         ))}
     </div >
   );
-}
+};
 
 ListRoll.propTypes = {
   data: PropTypes.shape({
@@ -76,7 +76,7 @@ ListRoll.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-}
+};
 
 
 export default function ListRoll() {
