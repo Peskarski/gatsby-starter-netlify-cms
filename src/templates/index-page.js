@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
+// import BlogRoll from "../components/BlogRoll";
+import MainRoll from "../components/MainRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
@@ -26,7 +26,7 @@ export const IndexPageTemplate = ({
       <section className="section section--gradient">
         <div className="container">
           <div className="content">
-            <BlogRoll />
+            <MainRoll />
           </div>
         </div>
       </section>

@@ -59,7 +59,7 @@ ListPostTemplate.propTypes = {
   image: PropTypes.string,
 };
 
-const BlogPost = ({ data }) => {
+const ListPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -84,13 +84,13 @@ const BlogPost = ({ data }) => {
   );
 };
 
-BlogPost.propTypes = {
+ListPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 };
 
-export default BlogPost;
+export default ListPost;
 
 export const pageQuery = graphql`
   query ListPostByID($id: String!) {

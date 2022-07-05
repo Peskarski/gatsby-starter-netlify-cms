@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ListsPostTemplate } from '../../templates/list-post';
+import { ListPostTemplate } from '../../templates/list-post';
 
 const ListPostPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(['data', 'tags']);
   return (
-    <ListsPostTemplate
+    <ListPostTemplate
       content={widgetFor('body')}
       description={entry.getIn(['data', 'description'])}
       tags={tags && tags.toJS()}

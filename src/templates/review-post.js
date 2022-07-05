@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const NewsPostTemplate = ({
+export const ReviewPostTemplate = ({
   content,
   contentComponent,
   description,
@@ -49,7 +49,7 @@ export const NewsPostTemplate = ({
   );
 };
 
-NewsPostTemplate.propTypes = {
+ReviewPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -59,12 +59,12 @@ NewsPostTemplate.propTypes = {
   image: PropTypes.string,
 };
 
-const NewsPost = ({ data }) => {
+const ReviewPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <NewsPostTemplate
+      <ReviewPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
@@ -84,13 +84,13 @@ const NewsPost = ({ data }) => {
   );
 };
 
-NewsPost.propTypes = {
+ReviewPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 };
 
-export default NewsPost;
+export default ReviewPost;
 
 export const pageQuery = graphql`
   query ReviewPostByID($id: String!) {
