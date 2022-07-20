@@ -66,7 +66,7 @@ const SimilarRollTemplate = (props) => {
     }
   });
 
-  if (!tags.some((tag) => tag !== 'hot' && nodeTags.includes(tag))) {
+  if (tags && !tags.some((tag) => tag !== 'hot' && nodeTags.includes(tag))) {
     return null;
   }
 
