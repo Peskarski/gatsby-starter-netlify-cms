@@ -51,13 +51,13 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Url", name: "url", widget: "text" }
+      - { label: "Url", name: "url", widget: "string" }
 
   - name: "news"
     label: "News"
     folder: "src/pages/news"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{url}}"
     fields:
       - {
           label: "Template Key",
@@ -71,12 +71,13 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Url", name: "url", widget: "string" }
 
   - name: "review"
     label: "Reviews"
     folder: "src/pages/reviews"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{url}}"
     fields:
       - {
           label: "Template Key",
@@ -89,7 +90,8 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }        
+      - { label: "Tags", name: "tags", widget: "list" }   
+      - { label: "Url", name: "url", widget: "string" }     
 
   - name: "pages"
     label: "Pages"

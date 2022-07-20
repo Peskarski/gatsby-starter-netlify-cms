@@ -49,7 +49,6 @@ const ReviewRollTemplate = (props) => {
                   >
                     {post.frontmatter.title}
                   </Link>
-                  <span> &bull; </span>
                   <span className="subtitle is-size-5 is-block">
                     {post.frontmatter.date}
                   </span>

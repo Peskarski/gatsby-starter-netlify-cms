@@ -7,34 +7,83 @@ import PreviewCompatibleImage from './PreviewCompatibleImage';
 
 const useStyles = createUseStyles(() => ({
   item: {
-    border: '1px solid black',
+    border: '1px solid grey',
     '&:hover': {
-      boxShadow: '1px 2px',
-      // cursor: 'pointer',
+      boxShadow: '1px 2px #64615F',
+      cursor: 'pointer',
+    },
+
+    '& .post-meta::first-letter': {
+      textTransform: 'capitalize',
+    },
+    '& .post-meta': {
+      textAlign: 'left',
     }
-  }
+  },
+  container: {
+    width: '90%',
+    textAlign: 'center',
+    padding: '16px',
+    marginLeft: '32px',
+    '& h3': {
+      color: '#485fc7',
+    },
+
+    '@media (min-width: 768px)': {
+      marginTop: '100px',
+    },
+  },
+  post: {
+    width: '100%',
+    marginBottom: '8px',
+    '& header': {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'left',
+    },
+
+    '& article': {
+      padding: '4px 8px',
+    },
+  },
+  image: {
+    width: '100%',
+    maxWidth: '100px',
+    marginRight: '8px',
+  },
 }));
 
-const MainRollTemplate = (props) => {
-  const { data } = props;
+const SimilarRollTemplate = (props) => {
+  const { data, tags, title } = props;
   const { edges: lists } = data.allMarkdownRemark;
   const cx = useStyles();
 
-  console.log(lists);
+  let nodeTags = [];
+
+  lists.forEach((list) => {
+    if(list.node.frontmatter.tags) {
+      nodeTags.push(...list.node.frontmatter.tags);
+    }
+  });
+
+  if (!tags.some((tag) => tag !== 'hot' && nodeTags.includes(tag))) {
+    return null;
+  }
 
   return (
-    <div className="columns is-multiline" >
+    <div className={cx.container}>
+      <h3>Также читайте</h3>
       {lists &&
         lists.map(({ node: post }) => (
-          post.frontmatter.tags?.includes('hot')
-            ? <div className="is-parent column is-6" key={post.id}>
+          tags.some((tag) => tag !== 'hot' && post.frontmatter.tags?.includes(tag)) && title !== post.frontmatter.title
+            ? <div className={cx.post} key={post.id}>
               <article
                 className={`blog-list-item tile is-child box notification ${cx.item} ${post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
+                    <div className={cx.image}>
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -51,24 +100,18 @@ const MainRollTemplate = (props) => {
                   ) : null}
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="title has-text-primary is-size-5"
                       to={post.fields.slug}
                     >
-                      {post.frontmatter.title}
+                      {post.frontmatter.title.toLowerCase()}
                     </Link>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
                   </p>
                 </header>
-                <p>
+                {/* <p>
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Побробнее
-                  </Link>
-                </p>
+                </p> */}
               </article>
             </div>
             : null
@@ -77,7 +120,7 @@ const MainRollTemplate = (props) => {
   );
 };
 
-MainRoll.propTypes = {
+SimilarRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -86,11 +129,11 @@ MainRoll.propTypes = {
 };
 
 
-export default function MainRoll() {
+export default function SimilarRoll({ tags, title }) {
   return (
     <StaticQuery
       query={graphql`
-        query MainRollQuery {
+        query SimilarRollQuery {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
           ) {
@@ -123,7 +166,7 @@ export default function MainRoll() {
           }
         }
       `}
-      render={(data, count) => <MainRollTemplate data={data} count={count} />}
+      render={(data, count) => <SimilarRollTemplate data={data} count={count} tags={tags} title={title} />}
     />
   );
 }

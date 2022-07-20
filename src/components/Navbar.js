@@ -36,6 +36,7 @@ class Navbar extends React.Component {
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
+        // style={{ backgroundColor: '#C0C6CF' }}
       >
         <div className="container">
           <div className="navbar-brand">
