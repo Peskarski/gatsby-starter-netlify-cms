@@ -1,15 +1,30 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { createUseStyles } from 'react-jss';
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
+const useStyles = createUseStyles(() => ({
+  layout: {
+    border: '1px solid white',
+    height: '100%',
+    width: '100%',
+    position: 'relative',
+  },
+  children: {
+    marginBottom: '100px',
+    minHeight: '78vh',
+  }
+}));
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
+  const cx = useStyles();
   return (
-    <div>
+    <div className={cx.layout}>
       <Helmet>
         <html lang="ru" />
         <title>{title}</title>
@@ -49,7 +64,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <div className={cx.children}>{children}</div>
       <Footer />
     </div>
   );
