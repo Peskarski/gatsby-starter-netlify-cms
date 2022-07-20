@@ -9,7 +9,8 @@ export default class ReviewsIndexPage extends React.Component {
         <div
           className="full-width-image-container margin-top-0"
           style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
+            backgroundImage: `url('/img/website-headder.jpg')`,
+            backgroundPosition: 'top',
           }}
         >
           <h1

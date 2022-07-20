@@ -9,10 +9,21 @@ import { withPrefix } from "gatsby";
 
 const useStyles = createUseStyles(() => ({
   layout: {
-    border: '1px solid white',
+    borderBottom: '1px solid white',
     height: '100%',
     width: '100%',
     position: 'relative',
+
+    '& .navbar-item': {
+      fontSize: '18px',
+      color: 'black',
+    },
+
+    '& .social': {
+      '@media (min-width: 768px)': {
+        marginTop: '30px'
+      }
+    }
   },
   children: {
     marginBottom: '100px',

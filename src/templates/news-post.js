@@ -1,10 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
+import { createUseStyles } from 'react-jss';
 import { Helmet } from "react-helmet";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import SimilarRoll from "../components/SimilarRoll";
+
+const useStyles = createUseStyles(() => ({
+  container: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+
+    '@media (min-width: 768px)': {
+      '& .column': {
+        width: '65%',
+      }
+    },
+
+    '@media (max-width: 767px)': {
+      flexDirection: 'column',
+    }
+  }
+}));
 
 // eslint-disable-next-line
 export const NewsPostTemplate = ({
@@ -18,30 +37,23 @@ export const NewsPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
 
+  const cx = useStyles();
+
   return (
     <section className="section">
       {helmet || ""}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <img src={image} />
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+          <div className={cx.container}>
+            <div className="column is-10 is-offset-1">
+              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                {title}
+              </h1>
+              <p>{description}</p>
+              <img src={image} />
+              <PostContent content={content} />
+            </div>
+            <SimilarRoll tags={tags} title={title} />
           </div>
         </div>
       </div>

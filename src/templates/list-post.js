@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { createUseStyles } from 'react-jss';
-import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import SimilarRoll from "../components/SimilarRoll";
 
 const useStyles = createUseStyles(() => ({
   container: {
+    width: '100%',
     display: 'flex',
     flexDirection: 'row',
 
