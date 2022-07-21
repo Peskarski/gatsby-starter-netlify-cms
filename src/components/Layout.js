@@ -4,6 +4,7 @@ import { createUseStyles } from 'react-jss';
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "./all.sass";
+import '@fontsource/pt-sans';
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
@@ -28,6 +29,12 @@ const useStyles = createUseStyles(() => ({
   children: {
     marginBottom: '100px',
     minHeight: '78vh',
+
+    '@media (max-width: 767px)': {
+      '& .full-width-image-container': {
+        height: '120px',
+      }
+    },
   }
 }));
 

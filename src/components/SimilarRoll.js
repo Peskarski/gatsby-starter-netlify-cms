@@ -2,8 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { createUseStyles } from 'react-jss';
-import { Link, graphql, StaticQuery } from 'gatsby';
-import PreviewCompatibleImage from './PreviewCompatibleImage';
+import { graphql, StaticQuery } from 'gatsby';
+import Tile from './Tile';
 
 const useStyles = createUseStyles(() => ({
   item: {
@@ -24,13 +24,17 @@ const useStyles = createUseStyles(() => ({
     width: '90%',
     textAlign: 'center',
     padding: '16px',
-    marginLeft: '32px',
     '& h3': {
       color: '#485fc7',
     },
 
-    '@media (min-width: 768px)': {
+    '@media (min-width: 769px)': {
       marginTop: '100px',
+      marginLeft: '32px',
+    },
+
+    '@media (max-width: 768px)': {
+      width: '100%',
     },
   },
   post: {
@@ -50,7 +54,7 @@ const useStyles = createUseStyles(() => ({
     width: '100%',
     maxWidth: '100px',
     marginRight: '8px',
-  },
+  }
 }));
 
 const SimilarRollTemplate = (props) => {
@@ -61,7 +65,7 @@ const SimilarRollTemplate = (props) => {
   let nodeTags = [];
 
   lists.forEach((list) => {
-    if(list.node.frontmatter.tags) {
+    if (list.node.frontmatter.tags) {
       nodeTags.push(...list.node.frontmatter.tags);
     }
   });
@@ -72,48 +76,12 @@ const SimilarRollTemplate = (props) => {
 
   return (
     <div className={cx.container}>
-      <h3>Также читайте</h3>
+      <h3>Читать далее:</h3>
       {lists &&
         lists.map(({ node: post }) => (
           tags.some((tag) => tag !== 'hot' && post.frontmatter.tags?.includes(tag)) && title !== post.frontmatter.title
-            ? <div className={cx.post} key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${cx.item} ${post.frontmatter.featuredpost ? 'is-featured' : ''
-                  }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className={cx.image}>
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                          width:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.width,
-                          height:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.height,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-5"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title.toLowerCase()}
-                    </Link>
-                  </p>
-                </header>
-                {/* <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                </p> */}
-              </article>
-            </div>
+            ?
+            <Tile post={post} key={post.title} fromSimilar />
             : null
         ))}
     </div >

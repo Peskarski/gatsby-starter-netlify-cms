@@ -1,6 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { createUseStyles } from 'react-jss';
 import { GatsbyImage } from "gatsby-plugin-image";
+
+const useStyles = createUseStyles(() => ({
+  image: {
+    '@media (max-width: 768px)': {
+      height: '100px !important',
+    },
+  }
+}));
 
 export default function FullWidthImage(props) {
   const {
@@ -10,6 +19,8 @@ export default function FullWidthImage(props) {
     subheading,
     imgPosition = "top left",
   } = props;
+
+  const cx = useStyles();
 
   return (
     <React.Fragment>
@@ -53,6 +64,7 @@ export default function FullWidthImage(props) {
             // This is a presentational image, so the alt should be an empty string
             alt=""
             formats={["auto", "webp", "avif"]}
+            className={cx.image}
           />
         )}
         {(title || subheading) && (

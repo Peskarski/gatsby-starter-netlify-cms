@@ -7,11 +7,7 @@ export default class ListIndexPage extends React.Component {
     return (
       <Layout>
         <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/website-headder.jpg')`,
-            backgroundPosition: 'top',
-          }}
+          className="margin-top-0"
         >
           <h1
             className="has-text-weight-bold is-size-1"
@@ -20,6 +16,8 @@ export default class ListIndexPage extends React.Component {
               backgroundColor: "#f40",
               color: "white",
               padding: "1rem",
+              margin: '16px auto',
+              textAlign: "center",
             }}
           >
             Подборки фильмов

@@ -9,7 +9,7 @@ import vimeo from "../img/social/vimeo.svg";
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="footer" style={{ backgroundColor: '#cf8e2a', padding: 0, height: '80px' }}>
+      <footer className="footer" style={{ backgroundColor: '#fccd04', padding: 0, height: '80px' }}>
         <div className="content has-text-centered">
           <div className="container">
             <div style={{ maxWidth: "100vw" }} className="columns">
@@ -18,14 +18,14 @@ class Footer extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
+                <a title="facebook" href="https://facebook.com" target="_blank" rel="noreferrer">
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="twitter" href="https://twitter.com">
+                <a title="twitter" href="https://twitter.com" target="_blank" rel="noreferrer">
                   <img
                     className="fas fa-lg"
                     src={twitter}
@@ -33,14 +33,14 @@ class Footer extends React.Component {
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="instagram" href="https://instagram.com">
+                <a title="instagram" href="https://instagram.com" target="_blank" rel="noreferrer">
                   <img
                     src={instagram}
                     alt="Instagram"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="vimeo" href="https://vimeo.com">
+                <a title="vimeo" href="https://vimeo.com" target="_blank" rel="noreferrer">
                   <img
                     src={vimeo}
                     alt="Vimeo"
