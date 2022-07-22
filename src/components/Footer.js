@@ -5,8 +5,6 @@ import youtube_1 from "../img/social/youtube_1.svg";
 import youtube_2 from "../img/social/youtube_2.svg";
 import telegram from "../img/social/telegram.svg";
 import vk from "../img/social/vk.svg";
-import twitter from "../img/social/twitter.svg";
-import vimeo from "../img/social/vimeo.svg";
 
 class Footer extends React.Component {
   render() {
@@ -16,7 +14,7 @@ class Footer extends React.Component {
           <div className="container">
             <div style={{ maxWidth: "100vw", display: 'flex', flexDirection: 'row' }} className="columns">
               <div style={{ marginTop: '36px', marginLeft: '24px' }}>
-                <iframe src="https://yoomoney.ru/quickpay/button-widget?targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0!&default-sum=100&button-text=12&yoomoney-payment-type=on&button-size=m&button-color=black&fio=on&successURL=https%3A%2F%2Fkinogeroi.com%2F&quickpay=small&account=410012994125382&" width="184" height="36" frameBorder="0" allowtransparency="true" scrolling="no"></iframe>
+                <iframe src="https://yoomoney.ru/quickpay/button-widget?targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0!&default-sum=100&button-text=13&yoomoney-payment-type=on&button-size=m&button-color=black&successURL=https%3A%2F%2Fkinogeroi.com%2F&quickpay=small&account=410012994125382&" width="184" height="36" frameBorder="0" allowtransparency="true" scrolling="no"></iframe>
               </div>
               <div className="column is-4 social">
                 <a
