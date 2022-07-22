@@ -12,10 +12,10 @@ export default function ReviewsIndexPage() {
           className="has-text-weight-bold is-size-1"
           style={{
             boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-            backgroundColor: "#f40",
-            color: "white",
+            backgroundColor: "#fccd04",
+            color: "black",
             padding: "1rem",
-            margin: '16px auto',
+            margin: '0 auto',
             textAlign: "center",
           }}
         >

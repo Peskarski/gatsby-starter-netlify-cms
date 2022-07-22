@@ -11,7 +11,7 @@ import { withPrefix } from "gatsby";
 const useStyles = createUseStyles(() => ({
   layout: {
     borderBottom: '1px solid white',
-    height: '100%',
+    minHeight: '100vh',
     width: '100%',
     position: 'relative',
 
@@ -22,7 +22,7 @@ const useStyles = createUseStyles(() => ({
 
     '& .social': {
       '@media (min-width: 768px)': {
-        marginTop: '30px'
+        marginTop: '20px'
       }
     }
   },
@@ -56,13 +56,13 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/favicon-32x32.png`}
+          href={`${withPrefix("/")}img/favicon-blue.png`}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/favicon-16x16.png`}
+          href={`${withPrefix("/")}img/favicon-blue.png`}
           sizes="16x16"
         />
 

@@ -6,7 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 const useStyles = createUseStyles(() => ({
   image: {
     '@media (max-width: 768px)': {
-      height: '100px !important',
+      height: '64px !important',
     },
   }
 }));

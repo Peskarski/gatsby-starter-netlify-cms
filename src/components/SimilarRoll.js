@@ -121,7 +121,6 @@ export default function SimilarRoll({ tags, title }) {
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 120
                         quality: 100
                         layout: CONSTRAINED
                       )

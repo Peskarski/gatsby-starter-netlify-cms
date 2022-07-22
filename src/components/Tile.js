@@ -6,12 +6,13 @@ import PreviewCompatibleImage from './PreviewCompatibleImage';
 const useStyles = createUseStyles(() => ({
   item: {
     width: (fromSimilar) => fromSimilar ? '300px' : '360px',
-    height: (fromSimilar) => fromSimilar ? '300px' : '320px',
+    height: (fromSimilar) => fromSimilar ? '360px' : '370px',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     backgroundColor: '#F7F7F7',
     paddingBottom: '4px',
+    borderRadius: '4px',
 
     '@media (min-width: 769px)': {
       margin: '16px',
@@ -29,21 +30,22 @@ const useStyles = createUseStyles(() => ({
 
     '&:hover': {
       boxShadow: '1px 2px #D5D7D9',
-      borderRadius: '4px',
       cursor: 'pointer',
     }
   },
   textBlock: {
     height: '162px',
     marginTop: '8px',
+    textAlign: 'left',
+    padding: '16px',
 
     '& h3': {
       margin: '0 8px 16px 8px',
-      textAlign: 'center',
     },
 
     '& p': {
       margin: '0 8px',
+      color: '#666666',
     },
   }
 }));

@@ -51,7 +51,6 @@ export default function NewsRoll() {
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 120
                         quality: 100
                         layout: CONSTRAINED
                       )

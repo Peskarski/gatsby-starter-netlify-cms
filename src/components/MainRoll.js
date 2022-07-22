@@ -54,7 +54,6 @@ export default function MainRoll() {
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 120
                         quality: 100
                         layout: CONSTRAINED
                       )
