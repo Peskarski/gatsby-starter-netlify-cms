@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "./all.sass";
 import '@fontsource/pt-sans';
+import '@fontsource/fira-sans';
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
@@ -22,9 +23,13 @@ const useStyles = createUseStyles(() => ({
 
     '& .social': {
       '@media (min-width: 768px)': {
-        marginTop: '20px'
+        marginTop: '30px'
       }
-    }
+    },
+
+    '& .widget-small__button': {
+      marginTop: '40px !important',
+    },
   },
   children: {
     marginBottom: '100px',
@@ -56,13 +61,13 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/favicon-blue.png`}
+          href={`${withPrefix("/")}img/favicon-gold.png`}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/favicon-blue.png`}
+          href={`${withPrefix("/")}img/favicon-gold.png`}
           sizes="16x16"
         />
 
