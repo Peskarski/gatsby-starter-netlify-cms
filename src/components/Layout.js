@@ -22,13 +22,20 @@ const useStyles = createUseStyles(() => ({
     },
 
     '& .social': {
+      marginTop: '30px',
+      whiteSpace: 'nowrap',
       '@media (min-width: 768px)': {
-        marginTop: '30px'
-      }
+        marginTop: '30px',
+      },
+
+      '@media (max-width: 460px)': {
+        marginLeft: '-36px',
+      },
     },
 
-    '& .widget-small__button': {
-      marginTop: '40px !important',
+    '& footer': {
+      display: 'flex',
+      justifyContent: 'center',
     },
   },
   children: {

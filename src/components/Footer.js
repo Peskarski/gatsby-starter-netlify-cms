@@ -14,44 +14,11 @@ class Footer extends React.Component {
       <footer className="footer" style={{ backgroundColor: '#fccd04', padding: 0, height: '80px' }}>
         <div className="content has-text-centered">
           <div className="container">
-            <div style={{ maxWidth: "100vw" }} className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                </section>
-              </div>
-              <div style={{ marginTop: '36px' }}>
+            <div style={{ maxWidth: "100vw", display: 'flex', flexDirection: 'row' }} className="columns">
+              <div style={{ marginTop: '36px', marginLeft: '24px' }}>
                 <iframe src="https://yoomoney.ru/quickpay/button-widget?targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0!&default-sum=100&button-text=12&yoomoney-payment-type=on&button-size=m&button-color=black&fio=on&successURL=https%3A%2F%2Fkinogeroi.com%2F&quickpay=small&account=410012994125382&" width="184" height="36" frameBorder="0" allowtransparency="true" scrolling="no"></iframe>
               </div>
               <div className="column is-4 social">
-                {/* <a title="facebook" href="https://facebook.com" target="_blank" rel="noreferrer">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a> */}
-                {/* <a title="twitter" href="https://twitter.com" target="_blank" rel="noreferrer">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com" target="_blank" rel="noreferrer">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com" target="_blank" rel="noreferrer">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a> */}
                 <a
                   title="youtube_1"
                   href="https://www.youtube.com/channel/UC_YZJoxVlFb5ALSG9Okdmkg?sub_confirmation=1"
