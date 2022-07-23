@@ -2,14 +2,14 @@
 templateKey: list-post
 title: Реальный смысл "ДРАЙВА", который заставит взглянуть на фильм по-новому!
 date: 2022-07-05T10:35:23.749Z
-description: Давайте внимательнее посмотрим на Драйв и узнаем реальный смысл фильма
+description: Давайте внимательнее посмотрим на Драйв и узнаем реальный смысл фильма!
 featuredimage: /img/website_article_template.jpg
 tags:
   - hot
   - crime
 url: drive-2011
 ---
-В 2011 на экраны вышел триллер Виндинга Рефна "Драйв", в котором Гослинг из героя-любовника трансформировался в звезду боевиков.
+В 2011 на экраны вышел триллер "Драйв", в котором Гослинг трансформировался в звезду боевиков.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ihFF_JzxXVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
