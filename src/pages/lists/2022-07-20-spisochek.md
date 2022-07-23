@@ -11,6 +11,8 @@ url: drive-2011
 ---
 В 2011 на экраны вышел триллер Виндинга Рефна "Драйв", в котором Гослинг из героя-любовника трансформировался в звезду боевиков.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ihFF_JzxXVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ![](/img/03.jpg)
 
 Но есть причина, по которой, казалось бы, дефолтный триллер получил так много наград: в нем есть нечто большее, чем Гослинг. Давайте внимательнее посмотрим на фильм и узнаем реальный смысл фильма ДРАЙВ. Да, в конце я расскажу, почему я на 200 процентов уверен, что Водитель остался жив!
