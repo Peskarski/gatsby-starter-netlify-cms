@@ -78,7 +78,7 @@ const SimilarRollTemplate = (props) => {
     <div className={cx.container}>
       <h3>Читать далее:</h3>
       {lists &&
-        lists.map(({ node: post }) => (
+        lists.slice(0, 5).map(({ node: post }) => (
           tags.some((tag) => tag !== 'hot' && post.frontmatter.tags?.includes(tag)) && title !== post.frontmatter.title
             ?
             <Tile post={post} key={post.title} fromSimilar />

@@ -6,7 +6,7 @@ import PreviewCompatibleImage from './PreviewCompatibleImage';
 const useStyles = createUseStyles(() => ({
   item: {
     width: (fromSimilar) => fromSimilar ? '300px' : '360px',
-    height: (fromSimilar) => fromSimilar ? '360px' : '370px',
+    height: (fromSimilar) => fromSimilar ? '370px' : '380px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
@@ -38,12 +38,18 @@ const useStyles = createUseStyles(() => ({
     marginTop: '8px',
     textAlign: 'left',
     padding: '16px',
+    // overflow: 'hidden',
+    // textOverflow: 'ellipsis',
 
     '& h3': {
       margin: '0 8px 16px 8px',
     },
 
     '& p': {
+      display: '-webkit-box',
+      overflow: 'hidden',
+      '-webkit-line-clamp': 3,
+      '-webkit-box-orient': 'vertical',
       margin: '0 8px',
       color: '#666666',
     },

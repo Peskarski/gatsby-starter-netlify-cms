@@ -30,6 +30,10 @@ const useStyles = createUseStyles(() => ({
       '@media (max-width: 460px)': {
         marginLeft: '-36px',
       },
+
+      '& a': {
+        padding: '1.1em 0.4em 0 0.4em',
+      }
     },
 
     '& footer': {
