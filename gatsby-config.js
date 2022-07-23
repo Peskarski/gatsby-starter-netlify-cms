@@ -3,8 +3,14 @@ module.exports = {
     title: "Последний киногерой",
     description:"",
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     "gatsby-plugin-react-helmet",
+    {
+      resolve: 'gatsby-plugin-jss-provider',
+    },
     {
       resolve: "gatsby-plugin-sass",
       options: {
@@ -111,6 +117,23 @@ module.exports = {
         ],
         display: 'swap'
       }
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts the following options, all of which are defined by `@emotion/babel-plugin` plugin.
+        // The values for each key in this example are the defaults the plugin uses.
+        sourceMap: true,
+        autoLabel: "dev-only",
+        labelFormat: `[local]`,
+        cssPropOptimization: true,
+      },
     },
   ],
 };

@@ -4,7 +4,6 @@ import { createUseStyles } from 'react-jss';
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "./all.sass";
-import '@fontsource/pt-sans';
 import '@fontsource/fira-sans';
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
