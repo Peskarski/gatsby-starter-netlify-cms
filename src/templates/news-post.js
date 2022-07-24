@@ -21,6 +21,10 @@ const useStyles = createUseStyles(() => ({
 
     '@media (max-width: 767px)': {
       flexDirection: 'column',
+
+      '& h1': {
+        fontSize: '30px !important',
+      }
     }
   }
 }));

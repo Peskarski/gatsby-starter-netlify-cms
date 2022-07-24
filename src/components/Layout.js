@@ -48,10 +48,24 @@ const useStyles = createUseStyles(() => ({
         height: '120px !important',
 
         '& .columns': {
-            flexDirection: 'column !important',
+          flexDirection: 'column !important',
         },
       },
     },
+
+    '& .video-container': {
+      '@media (max-width: 767px)': {
+        width: '100% !important',
+
+        '& iframe': {
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100% !important',
+          height: '100% !important',
+        }
+      },
+    }
   },
   children: {
     marginBottom: '100px',

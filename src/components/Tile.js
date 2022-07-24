@@ -38,8 +38,6 @@ const useStyles = createUseStyles(() => ({
     marginTop: '8px',
     textAlign: 'left',
     padding: '16px',
-    // overflow: 'hidden',
-    // textOverflow: 'ellipsis',
 
     '& h3': {
       margin: '0 8px 16px 8px',
