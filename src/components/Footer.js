@@ -14,7 +14,7 @@ class Footer extends React.Component {
           <div className="container">
             <div style={{ maxWidth: "100vw", display: 'flex', flexDirection: 'row' }} className="columns">
               <div style={{ margin: '36px 36px 0 8px' }}>
-                <iframe src="https://yoomoney.ru/quickpay/button-widget?targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0!&default-sum=100&button-text=11&yoomoney-payment-type=on&button-size=m&button-color=black&successURL=https%3A%2F%2Fkinogeroi.com%2F&quickpay=small&account=410012994125382&" width="150" height="36" frameBorder="0" allowtransparency="true" scrolling="no"></iframe>
+                <iframe src="https://yoomoney.ru/quickpay/button-widget?targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0!&default-sum=100&button-text=11&yoomoney-payment-type=on&button-size=m&button-color=black&successURL=https%3A%2F%2Fkinogeroi.com%2F&quickpay=small&account=410012994125382&" width="170" height="36" frameBorder="0" allowtransparency="true" scrolling="no"></iframe>
               </div>
               <div className="column is-4 social">
                 <a

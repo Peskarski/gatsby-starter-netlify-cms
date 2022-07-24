@@ -31,7 +31,7 @@ const useStyles = createUseStyles(() => ({
         marginLeft: '-36px',
       },
 
-      '@media (max-width: 389px)': {
+      '@media (max-width: 400px)': {
         marginTop: '-4px',
       },
 
@@ -44,7 +44,7 @@ const useStyles = createUseStyles(() => ({
       display: 'flex',
       justifyContent: 'center',
 
-      '@media (max-width: 389px)': {
+      '@media (max-width: 400px)': {
         height: '120px !important',
 
         '& .columns': {

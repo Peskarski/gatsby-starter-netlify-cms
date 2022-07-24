@@ -74,16 +74,22 @@ const SimilarRollTemplate = (props) => {
     return null;
   }
 
+  let resultPosts = [];
+
+  if (lists) {
+    lists.forEach(({ node: post }) => {
+      if (tags.some((tag) => tag !== 'hot' && post.frontmatter.tags?.includes(tag)) && title !== post.frontmatter.title) {
+        resultPosts.push(post);
+      }
+    });
+  }
+
   return (
     <div className={cx.container}>
       <h3>Читать далее:</h3>
-      {lists &&
-        lists.slice(0, 5).map(({ node: post }) => (
-          tags.some((tag) => tag !== 'hot' && post.frontmatter.tags?.includes(tag)) && title !== post.frontmatter.title
-            ?
-            <Tile post={post} key={post.title} fromSimilar />
-            : null
-        ))}
+      {resultPosts.slice(0, 3).map((post) => (
+        <Tile post={post} key={post.title} fromSimilar />
+      ))}
     </div >
   );
 };

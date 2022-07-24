@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({
     <div>
       <FullWidthImage img={heroImage} />
       <section className="section section--gradient">
-        <div className="container">
+        <div className="container" style={{ maxWidth: '1600px' }}>
           <div className="content">
             <MainRoll />
           </div>
