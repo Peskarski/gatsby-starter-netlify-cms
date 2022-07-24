@@ -58,11 +58,7 @@ const useStyles = createUseStyles(() => ({
         width: '100% !important',
 
         '& iframe': {
-          position: 'absolute',
-          top: 0,
-          left: 0,
           width: '100% !important',
-          height: '100% !important',
         }
       },
     }
