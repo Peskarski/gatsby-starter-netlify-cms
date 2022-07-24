@@ -11,7 +11,7 @@ url: drive-2011
 ---
 В 2011 на экраны вышел триллер "Драйв", в котором Гослинг трансформировался в звезду боевиков.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ihFF_JzxXVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ihFF_JzxXVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ![](/img/03.jpg)
 
