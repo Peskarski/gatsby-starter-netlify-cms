@@ -7,6 +7,9 @@ featuredimage: /img/website_article_template.jpg
 tags:
   - hot
   - crime
+  - drive
+  - refn
+  - noir
 url: drive-2011
 ---
 В 2011 на экраны вышел триллер "Драйв", в котором Гослинг трансформировался в звезду боевиков.
