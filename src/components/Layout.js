@@ -31,6 +31,10 @@ const useStyles = createUseStyles(() => ({
         marginLeft: '-36px',
       },
 
+      '@media (max-width: 389px)': {
+        marginTop: '-4px',
+      },
+
       '& a': {
         padding: '1.1em 0.4em 0 0.4em',
       }
@@ -39,6 +43,14 @@ const useStyles = createUseStyles(() => ({
     '& footer': {
       display: 'flex',
       justifyContent: 'center',
+
+      '@media (max-width: 389px)': {
+        height: '120px !important',
+
+        '& .columns': {
+            flexDirection: 'column !important',
+        },
+      },
     },
   },
   children: {
