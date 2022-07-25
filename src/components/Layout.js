@@ -118,6 +118,8 @@ const TemplateWrapper = ({ children, title, description }) => {
           content={`${withPrefix("/")}img/website-headder.jpg`}
         />
         <meta name="google-site-verification" content="V-DObU2soVMEagadi1H87taePDU6lgUrt40q0kMHY5w" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7WP56W1GV"></script>
+        <script src="./script.js"></script>
       </Helmet>
       <Navbar />
       <div className={cx.children}>{children}</div>
