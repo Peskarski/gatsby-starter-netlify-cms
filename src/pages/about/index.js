@@ -22,6 +22,9 @@ const useStyles = createUseStyles(() => ({
       width: '100%',
       margin: '0 0 20px 0',
     },
+  },
+  subscribe: {
+    width: '360px',
   }
 }));
 
@@ -39,6 +42,13 @@ export default function ListIndexPage() {
                 <p>
                   Привет, друзья! Меня зовут Иван Пятовский, более известный как Последний Киногерой. Я беру ваши любимые фильмы, и разбираю по косточкам, особенно криминальные шедевры. Если вы любите анализировать ленты, сценарии и киногероев — Добро пожаловать!
                 </p>
+                <a 
+                href="https://www.youtube.com/channel/UC_YZJoxVlFb5ALSG9Okdmkg?sub_confirmation=1"
+                target="_blank"
+                rel="noreferrer"
+                >
+                  <img src="img/Sbscribe.png" className={cx.subscribe} />
+                </a>
               </div>
             </div>
           </div>
