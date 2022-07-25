@@ -35,7 +35,7 @@ collections:
 
   - name: "list"
     label: "List"
-    folder: "src/pages/lists"
+    folder: "src/pages/film-lists"
     create: true
     slug: "{{url}}"
     fields:
@@ -55,7 +55,7 @@ collections:
 
   - name: "news"
     label: "News"
-    folder: "src/pages/news"
+    folder: "src/pages/film-news"
     create: true
     slug: "{{url}}"
     fields:
@@ -75,7 +75,7 @@ collections:
 
   - name: "review"
     label: "Reviews"
-    folder: "src/pages/reviews"
+    folder: "src/pages/film-reviews"
     create: true
     slug: "{{url}}"
     fields:
@@ -183,19 +183,6 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "about-page",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: Image, name: image, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

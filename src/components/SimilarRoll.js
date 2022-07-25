@@ -70,9 +70,9 @@ const SimilarRollTemplate = (props) => {
     }
   });
 
-  if ((tags && !tags.some((tag) => tag !== 'hot' && nodeTags.includes(tag))) || !tags) {
-    return null;
-  }
+  // if ((tags && !tags.some((tag) => tag !== 'hot' && nodeTags.includes(tag))) || !tags) {
+  //   return null;
+  // }
 
   let resultPosts = [];
 
@@ -82,6 +82,10 @@ const SimilarRollTemplate = (props) => {
         resultPosts.push(post);
       }
     });
+  }
+
+  if (!resultPosts.length) {
+    return null;
   }
 
   return (

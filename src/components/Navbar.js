@@ -74,13 +74,13 @@ class Navbar extends React.Component {
               <Link className="navbar-item" to="/">
                 Самое интересное
               </Link>
-              <Link className="navbar-item" to="/lists">
+              <Link className="navbar-item" to="/film-lists">
                 Подборки фильмов
               </Link>
-              <Link className="navbar-item" to="/news">
+              <Link className="navbar-item" to="/film-news">
                 Новости
               </Link>
-              <Link className="navbar-item" to="/reviews">
+              <Link className="navbar-item" to="/film-reviews">
                 Обзоры
               </Link>
               <Link className="navbar-item" to="/about">

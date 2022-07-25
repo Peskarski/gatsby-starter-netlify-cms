@@ -31,7 +31,7 @@ const useStyles = createUseStyles(() => ({
         marginLeft: '-36px',
       },
 
-      '@media (max-width: 400px)': {
+      '@media (max-width: 420px)': {
         marginTop: '-4px',
       },
 
@@ -44,7 +44,7 @@ const useStyles = createUseStyles(() => ({
       display: 'flex',
       justifyContent: 'center',
 
-      '@media (max-width: 400px)': {
+      '@media (max-width: 420px)': {
         height: '120px !important',
 
         '& .columns': {
@@ -68,22 +68,22 @@ const useStyles = createUseStyles(() => ({
     minHeight: '78vh',
 
     '@media (max-width: 767px)': {
-      '& .full-width-image-container': {
-        height: '120px',
+      '& .gatsby-image-wrapper img': {
+        height: 'unset !important'
       }
     },
   }
 }));
 
-const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+const TemplateWrapper = ({ children, title, description }) => {
+  const { title: metaTitle, description: metaDescription } = useSiteMetadata();
   const cx = useStyles();
   return (
     <div className={cx.layout}>
       <Helmet>
         <html lang="ru" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>{title || metaTitle}</title>
+        <meta name="description" content={description || metaDescription} />
 
         <link
           rel="apple-touch-icon"
