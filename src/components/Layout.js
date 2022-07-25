@@ -117,6 +117,7 @@ const TemplateWrapper = ({ children, title, description }) => {
           property="og:image"
           content={`${withPrefix("/")}img/website-headder.jpg`}
         />
+        <meta name="google-site-verification" content="V-DObU2soVMEagadi1H87taePDU6lgUrt40q0kMHY5w" />
       </Helmet>
       <Navbar />
       <div className={cx.children}>{children}</div>
