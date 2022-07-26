@@ -12,9 +12,9 @@ tags:
   - noir
 url: drive-2011
 ---
-В 2011 году на экраны вышел захватывающий триллер Николаса Виндинга Рефна "Драйв", в котором Райан Гослинг из героя-любовника трансформировался в звезду боевиков. Фильм, основой которому послужил одноименный роман Джеймса Саллиса, получил кучу наград, что еще больше впечатляет, если учесть незамысловатый сюжет, являющийся классическим нуарным триллером, который чувствовал бы себя в своей тарелке в 80-х годах.
+В 2011 году на экраны вышел захватывающий триллер Николаса Виндинга Рефна ["Драйв"](https://youtu.be/CYSvRZB2dAo), в котором Райан Гослинг из героя-любовника трансформировался в звезду боевиков. Фильм, основой которому послужил одноименный роман Джеймса Саллиса, получил кучу наград, что еще больше впечатляет, если учесть незамысловатый сюжет, являющийся классическим нуарным триллером, который чувствовал бы себя в своей тарелке в 80-х годах.
 
-Но есть причина, по которой, казалось бы, дефолтный триллер получил так много наград: в нем есть нечто большее, чем Гослинг. Давайте внимательнее посмотрим на фильм и узнаем реальный смысл фильма ДРАЙВ. Да, в конце я расскажу, почему я на 200 процентов уверен, что Водитель остался жив!
+Но есть причина, по которой, казалось бы, дефолтный триллер получил так много наград: в нем есть нечто большее, чем Гослинг. Давайте внимательнее посмотрим на фильм и узнаем реальный смысл фильма [ДРАЙВ](https://youtu.be/CYSvRZB2dAo). Да, в конце я расскажу, почему я на 200 процентов уверен, что Водитель остался жив!
 
 ![](/img/08.jpg)
 
@@ -101,6 +101,6 @@ url: drive-2011
 
 **Подписывайтесь на канал, если вам нравится то, что я делаю!**
 
-<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ihFF_JzxXVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/CYSvRZB2dAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <iframe src="https://yoomoney.ru/quickpay/button-widget?targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0!&default-sum=100&button-text=13&yoomoney-payment-type=on&button-size=m&button-color=black&successURL=https%3A%2F%2Fkinogeroi.com%2F&quickpay=small&account=410012994125382&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
