@@ -5,7 +5,10 @@ import ListRoll from "../../components/ListRoll";
 export default class ListIndexPage extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout
+        title="Последний Киногерой"
+        description="Лучшие фильмы, которые ты можешь посмотреть дома или в кино!"
+      >
         <div
           className="margin-top-0"
         >

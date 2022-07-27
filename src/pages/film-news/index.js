@@ -5,7 +5,10 @@ import NewsRoll from '../../components/NewsRoll';
 export default class NewsIndexPage extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout
+        title="Новости кино —  Последний Киногерой"
+        description="Новости кино со всего мира! Трейлеры, постеры, кадры, биографии актеров, описания фильмов и сериалов."
+      >
         <div
           className="margin-top-0"
         >

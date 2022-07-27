@@ -4,7 +4,10 @@ import ReviewRoll from "../../components/ReviewRoll";
 
 export default function ReviewsIndexPage() {
   return (
-    <Layout>
+    <Layout
+      title="Обзоры фильмов от Киногероя!"
+      description="Фильмы - рецензии и обзоры новинок от Киногероя!"
+    >
       <div
         className="margin-top-0"
       >

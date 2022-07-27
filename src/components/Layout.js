@@ -78,13 +78,15 @@ const useStyles = createUseStyles(() => ({
 const TemplateWrapper = ({ children, title, description }) => {
   const { title: metaTitle, description: metaDescription } = useSiteMetadata();
   const cx = useStyles();
+
   return (
     <div className={cx.layout}>
       <Helmet>
         <html lang="ru" />
         <title>{title || metaTitle}</title>
         <meta name="description" content={description || metaDescription} />
-
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2899601401460229"
+          crossOrigin="anonymous"></script>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -111,13 +113,12 @@ const TemplateWrapper = ({ children, title, description }) => {
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={title || metaTitle} />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix("/")}img/website-headder.jpg`}
+          content={`${withPrefix("/")}img/favicon-gold.jpg`}
         />
-        <meta name="google-site-verification" content="V-DObU2soVMEagadi1H87taePDU6lgUrt40q0kMHY5w" />
       </Helmet>
       <Navbar />
       <div className={cx.children}>{children}</div>

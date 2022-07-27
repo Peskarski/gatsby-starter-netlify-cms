@@ -31,7 +31,10 @@ const useStyles = createUseStyles(() => ({
 export default function ListIndexPage() {
   const cx = useStyles();
   return (
-    <Layout>
+    <Layout
+      title="Кто такой Последний Киногерой?"
+      description="Кто такой Последний Киногерой?"
+    >
       <section className="section">
         <div className="container">
           <div className="content">
@@ -42,10 +45,10 @@ export default function ListIndexPage() {
                 <p>
                   Привет, друзья! Меня зовут Иван Пятовский, более известный как Последний Киногерой. Я беру ваши любимые фильмы, и разбираю по косточкам, особенно криминальные шедевры. Если вы любите анализировать ленты, сценарии и киногероев — Добро пожаловать!
                 </p>
-                <a 
-                href="https://www.youtube.com/channel/UC_YZJoxVlFb5ALSG9Okdmkg?sub_confirmation=1"
-                target="_blank"
-                rel="noreferrer"
+                <a
+                  href="https://www.youtube.com/channel/UC_YZJoxVlFb5ALSG9Okdmkg?sub_confirmation=1"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <img src="img/Sbscribe.png" className={cx.subscribe} />
                 </a>
