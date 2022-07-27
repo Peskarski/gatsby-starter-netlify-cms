@@ -6,7 +6,8 @@ import PreviewCompatibleImage from './PreviewCompatibleImage';
 const useStyles = createUseStyles(() => ({
   item: {
     width: (fromSimilar) => fromSimilar ? '300px' : '360px',
-    height: (fromSimilar) => fromSimilar ? '370px' : '380px',
+    minHeight: (fromSimilar) => fromSimilar ? '370px' : '380px',
+    height: 'min-content',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
@@ -34,7 +35,8 @@ const useStyles = createUseStyles(() => ({
     }
   },
   textBlock: {
-    height: '162px',
+    minHeight: '162px',
+    height: 'auto',
     marginTop: '8px',
     textAlign: 'left',
     padding: '16px',

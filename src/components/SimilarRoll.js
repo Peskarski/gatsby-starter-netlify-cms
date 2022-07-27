@@ -70,10 +70,6 @@ const SimilarRollTemplate = (props) => {
     }
   });
 
-  // if ((tags && !tags.some((tag) => tag !== 'hot' && nodeTags.includes(tag))) || !tags) {
-  //   return null;
-  // }
-
   let resultPosts = [];
 
   if (lists) {
