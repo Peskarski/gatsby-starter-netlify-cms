@@ -3,7 +3,7 @@ templateKey: list-post
 title: Власть (2018) — Как Герои Фильма Выглядят В Реальности?
 date: 2022-07-29T09:04:13.452Z
 description: Власть (2018) — Как Герои Фильма Выглядят В Реальности?
-featuredimage: /img/dogs.jpg
+featuredimage: /img/vice_cheney.jpg
 tags:
   - comedy
   - hot
