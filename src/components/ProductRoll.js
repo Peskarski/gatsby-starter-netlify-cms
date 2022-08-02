@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, StaticQuery } from 'gatsby';
-import Tile from './Tile';
+import ProductTile from './ProductTile';
 
 const ProductRollTemplate = (props) => {
   const { data } = props;
@@ -12,7 +12,7 @@ const ProductRollTemplate = (props) => {
     <div className="columns is-multiline" >
       {products &&
         products.map(({ node: post }) => (
-          <Tile post={post} key={post.title} />
+          <ProductTile post={post} key={post.title} />
         ))}
     </div >
   );
