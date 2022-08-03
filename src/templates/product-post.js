@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { createUseStyles } from 'react-jss';
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
 const useStyles = createUseStyles(() => ({
@@ -75,23 +74,21 @@ const ProductPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout>
-      <ProductPostTemplate
-        content={post.html}
-        contentComponent={HTMLContent}
-        description={post.frontmatter.description}
-        helmet={
-          <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
-          </Helmet>
-        }
-        title={post.frontmatter.title}
-      />
-    </Layout>
+    <ProductPostTemplate
+      content={post.html}
+      contentComponent={HTMLContent}
+      description={post.frontmatter.description}
+      helmet={
+        <Helmet titleTemplate="%s | Blog">
+          <title>{`${post.frontmatter.title}`}</title>
+          <meta
+            name="description"
+            content={`${post.frontmatter.description}`}
+          />
+        </Helmet>
+      }
+      title={post.frontmatter.title}
+    />
   );
 };
 

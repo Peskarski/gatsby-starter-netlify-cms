@@ -40,11 +40,14 @@ export default function ProductRoll() {
               node {
                 excerpt(pruneLength: 400)
                 id
+                html
                 fields {
                   slug
                 }
                 frontmatter {
                   title
+                  price
+                  description
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
                   featuredpost

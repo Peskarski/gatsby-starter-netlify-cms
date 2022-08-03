@@ -152,5 +152,8 @@ module.exports = {
         defer: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-modal-routing`,
+    }
   ],
 };
