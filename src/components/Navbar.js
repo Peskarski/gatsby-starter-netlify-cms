@@ -83,9 +83,9 @@ class Navbar extends React.Component {
               <Link className="navbar-item" to="/film-reviews">
                 Обзоры
               </Link>
-              {/* <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" to="/products">
                 Набор блогера
-              </Link> */}
+              </Link>
               <Link className="navbar-item" to="/about">
                 Об авторе
               </Link>
