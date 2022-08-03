@@ -16,4 +16,4 @@ price: € 117,74
 
 1. Отсутствие ветрозащиты
 
-[Купить на AliExpress](http://shp.pub/69uzfi)
+<a href="http://shp.pub/69uzfi" target="_blank" rel="noreferrer">Купить на AliExpress</a>
