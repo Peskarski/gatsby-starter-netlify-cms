@@ -2,9 +2,9 @@
 templateKey: product-post
 title: Портативный рекордер ZOOM H1n
 description: Надежный рекордер, со своей задачей справляется отлично. Подойдет
-  для профессиональной видеосъемки!
+  для проф. видеосъемки!
 featuredimage: /img/artboard-1.png
-price: € 117,74
+price: $ 100
 ---
 Достоинства:
 
@@ -17,3 +17,5 @@ price: € 117,74
 1. Отсутствие ветрозащиты
 
 <a href="http://shp.pub/69uzfi" target="_blank" rel="noreferrer">Купить на AliExpress</a>
+
+<a href="https://amzn.to/3d5Pczx" target="_blank" rel="noreferrer">Купить на Amazon</a>
