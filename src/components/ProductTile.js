@@ -10,7 +10,7 @@ import { HTMLContent } from '../components/Content';
 const useStyles = createUseStyles(() => ({
   item: {
     width: '300px',
-    minHeight: '440px',
+    minHeight: '555px',
     height: 'min-content',
     display: 'flex',
     flexDirection: 'column',
@@ -86,6 +86,10 @@ const useStyles = createUseStyles(() => ({
     '& a': {
       fontWeight: 600,
     },
+
+    '@media (max-width: 768px)': {
+      overflowY: 'scroll',
+    },
   },
   button: {
     border: '2px solid black !important',
@@ -93,7 +97,7 @@ const useStyles = createUseStyles(() => ({
     width: '50% !important',
     color: 'black !important',
     fontWeight: '600 !important',
-    margin: '0 auto !important',
+    margin: 'auto auto 0 auto !important',
   },
 }));
 
