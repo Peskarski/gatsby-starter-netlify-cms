@@ -87,7 +87,7 @@ const TemplateWrapper = ({ children, title, description }) => {
         <meta name="description" content={description || metaDescription} />
         <meta name="verify-admitad" content="63a74fe524" />
         <meta name="propeller" content="3707f7a5d992c3f8f098981fa8d530d3"></meta>
-        <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5363056,document.body||document.documentElement)</script>
+        <script>{(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5363056,document.body||document.documentElement)}</script>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
