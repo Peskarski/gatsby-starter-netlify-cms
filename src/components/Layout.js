@@ -86,8 +86,7 @@ const TemplateWrapper = ({ children, title, description }) => {
         <title>{title || metaTitle}</title>
         <meta name="description" content={description || metaDescription} />
         <meta name="verify-admitad" content="63a74fe524" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2899601401460229"
-          crossOrigin="anonymous"></script>
+        <meta name="propeller" content="3707f7a5d992c3f8f098981fa8d530d3"></meta>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
