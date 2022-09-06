@@ -79,6 +79,18 @@ const TemplateWrapper = ({ children, title, description }) => {
   const { title: metaTitle, description: metaDescription } = useSiteMetadata();
   const cx = useStyles();
 
+  React.useEffect(() => {
+    {
+      if (typeof window === "undefined" || !window.document) {
+        console.log(`bailing out of the useeffect. Going to continue to render??`);
+      } else {
+        const script = window.document.createElement('script');
+        script.innerHTML = "(function (s, u, z, p) { s.src = u, s.setAttribute('data-zone', z), p.appendChild(s); })(document.createElement('script'), 'https://inklinkor.com/tag.min.js', 5363056, document.body || document.documentElement)";
+        document.head.appendChild(script);
+      }
+    }
+  }, []);
+
   return (
     <div className={cx.layout}>
       <Helmet>
@@ -87,7 +99,6 @@ const TemplateWrapper = ({ children, title, description }) => {
         <meta name="description" content={description || metaDescription} />
         <meta name="verify-admitad" content="63a74fe524" />
         <meta name="propeller" content="3707f7a5d992c3f8f098981fa8d530d3"></meta>
-        <script>{(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5363056,document.body||document.documentElement)}</script>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
