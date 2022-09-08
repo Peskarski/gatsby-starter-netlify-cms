@@ -79,21 +79,21 @@ const TemplateWrapper = ({ children, title, description }) => {
   const { title: metaTitle, description: metaDescription } = useSiteMetadata();
   const cx = useStyles();
 
-  // React.useEffect(() => {
-  //   {
-  //     if (typeof window === "undefined" || !window.document) {
-  //       console.log(`bailing out of the useeffect. Going to continue to render??`);
-  //     } else {
-  //       const isScript = window.document.querySelector('#adv');
-  //       if (!isScript) {
-  //         const script = window.document.createElement('script');
-  //       script.setAttribute('id', 'adv');
-  //       script.innerHTML = "(function (s, u, z, p) { s.src = u, s.setAttribute('data-zone', z), p.appendChild(s); })(document.createElement('script'), 'https://inklinkor.com/tag.min.js', 5363056, document.body || document.documentElement)";
-  //       document.head.appendChild(script);
-  //       }
-  //     }
-  //   }
-  // }, []);
+  React.useEffect(() => {
+    {
+      if (typeof window === "undefined" || !window.document) {
+        console.log(`bailing out of the useeffect. Going to continue to render??`);
+      } else {
+        const isScript = window.document.querySelector('#adv');
+        if (!isScript) {
+          const script = window.document.createElement('script');
+        script.setAttribute('id', 'adv');
+        script.innerHTML = "(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5365524,document.body||document.documentElement)";
+        document.head.appendChild(script);
+        }
+      }
+    }
+  }, []);
 
   return (
     <div className={cx.layout}>
