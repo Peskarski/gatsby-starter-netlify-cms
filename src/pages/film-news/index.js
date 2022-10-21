@@ -27,7 +27,7 @@ export default class NewsIndexPage extends React.Component {
           </h1>
         </div>
         <section className="section">
-          <div className="container">
+          <div className="container" style={{ maxWidth: '1600px' }}>
             <div className="content">
               <NewsRoll />
             </div>
