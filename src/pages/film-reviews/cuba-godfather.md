@@ -4,7 +4,7 @@ title: В Чем Смысл Сделки На Кубе? (Этого нет в К
 date: 2022-12-19T15:18:16.499Z
 description: Над какой сделкой работали Хайман Рот и Майкл Корлеоне на Кубе в
   КРЕСТНЫЙ ОТЕЦ 2? Сегодня я расскажу вам правду!
-featuredimage: /img/076.genco_abbandando.jpg
+featuredimage: /img/079.cuban_deal.jpg
 tags:
   - hot
   - review
