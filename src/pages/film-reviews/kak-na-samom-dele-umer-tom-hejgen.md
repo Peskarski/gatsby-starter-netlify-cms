@@ -1,6 +1,6 @@
 ---
 templateKey: review-post
-title: Назван Убийца Тома Хэйгена! (Крестный Отец)
+title: Как На Самом Деле Умер Том Хэйген? (Ужасная Смерть!)
 date: 2023-01-23T14:40:44.707Z
 description: Как На Самом Деле Умер Том Хэйген? (Ужасная Смерть!)
 featuredimage: /img/084_how-did-tom-hagen-really-die_02.jpg
