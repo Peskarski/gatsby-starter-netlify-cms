@@ -13,7 +13,7 @@ tags:
   - movie
 url: kak-na-samom-dele-umer-tom-hejgen
 ---
-Здарова, друзья! Как же на самом деле [умер Том Хэйген](https://youtu.be/O_fQ-6Zbi-4)? Наконец-то роман "Месть крестного отца" раскроет правдивую историю, и сегодня мы с вами узнаем, в чём заключается [правда](https://youtu.be/O_fQ-6Zbi-4)! Меня зовут Иван Пятовский, вы на канале [Последний Киногерой!](https://www.youtube.com/c/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B9%D0%9A%D0%B8%D0%BD%D0%BE%D0%B3%D0%B5%D1%80%D0%BE%D0%B9/videos)
+Здарова, друзья! Как же на самом деле [умер Том Хэйген](https://youtu.be/xcGS3A3CA20)? Наконец-то роман "Месть крестного отца" раскроет правдивую историю, и сегодня мы с вами узнаем, в чём заключается [правда](https://youtu.be/O_fQ-6Zbi-4)! Меня зовут Иван Пятовский, вы на канале [Последний Киногерой!](https://www.youtube.com/c/%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B9%D0%9A%D0%B8%D0%BD%D0%BE%D0%B3%D0%B5%D1%80%D0%BE%D0%B9/videos)
 
 Кстати, в следующем видео вы узнаете, как именно Том Хейген стал другом Санни Корлеоне - это невероятная история, я серьезно, так что обязательно подпишитесь и жмите "Палец вверх"!
 
@@ -71,7 +71,7 @@ url: kak-na-samom-dele-umer-tom-hejgen
 
 Если вы хотите узнать больше об убийце Тома Хейгена, обратите внимание [сюда](https://youtu.be/MI_hfmpQ81M) - там вы найдете ссылку на видео, где я подробно рассказываю о Нике Джерачи!
 
-<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/O_fQ-6Zbi-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/xcGS3A3CA20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 **Крутой мерч здесь:**
 
