@@ -96,7 +96,7 @@ url: richie-aprile-klan-soprano
 
 В любом случае, Ричи был превосходным противником для Тони. Так что, за тебя, Ричи Април - пусть тебя и не стало, но память о тебе жива!
 
-<iframe src="https://player.mave.digital?podcast=kinogeroi&episode=11&color=rgb(95,128,245)&mute=1&date=0&download=0" style="width: 100%" height="235" scrolling="no" frameborder="no"></iframe>
+<iframe src="https://player.mave.digital?podcast=kinogeroi&episode=12&color=rgb(95,128,245)&mute=1&date=0&download=0" style="width: 100%" height="235" scrolling="no" frameborder="no"></iframe>
 
 <iframe src="https://yoomoney.ru/quickpay/button-widget?targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0!&default-sum=100&button-text=13&yoomoney-payment-type=on&button-size=m&button-color=black&successURL=https%3A%2F%2Fkinogeroi.com%2F&quickpay=small&account=410012994125382&" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
 
